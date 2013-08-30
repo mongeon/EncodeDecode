@@ -1,0 +1,47 @@
+﻿<Window x:Class="EncodeDecodeUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="4"  />
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="4"  />
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="4"  />
+        </Style>
+        <Style TargetType="RadioButton">
+            <Setter Property="Margin" Value="4"  />
+        </Style>
+
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBox  Height="25"  Name="txtFileName" />
+            <Button Name="btnBrowse" Grid.Column="1" HorizontalAlignment="Right" Content="..." Padding="6,0" Height="23" Click="BtnBrowseClick"></Button>
+        </Grid>
+        <TextBox Grid.Row="1"  Name="txtOutput" IsReadOnly="{Binding ElementName=EncodeOption, Path=IsChecked}" FontFamily="Courier New" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" />
+        <StackPanel Grid.Row="2"   Name="stackPanel1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <RadioButton Name="EncodeOption" VerticalAlignment="Center" Content="Encode" IsChecked="true"/>
+            <RadioButton Name="DecodeOption" VerticalAlignment="Center" Content="Decode"/>
+            <Button Content="Go" Height="23" Name="btnGo" Width="75" Click="BtnEncodeClick" />
+        </StackPanel>
+
+    </Grid>
+
+</Window>
