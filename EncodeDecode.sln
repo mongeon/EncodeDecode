@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncodeDecodeUI", "EncodeDecodeUI\EncodeDecodeUI.csproj", "{E987B56C-18EB-4B52-80F9-52F83EF709EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncodeDecode", "EncodeDecode\EncodeDecode.csproj", "{58E7254F-957C-42E1-BEAB-4622E0E112F6}"
@@ -11,16 +13,19 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E987B56C-18EB-4B52-80F9-52F83EF709EF}.Debug|x86.ActiveCfg = Debug|x86
-		{E987B56C-18EB-4B52-80F9-52F83EF709EF}.Debug|x86.Build.0 = Debug|x86
+		{E987B56C-18EB-4B52-80F9-52F83EF709EF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E987B56C-18EB-4B52-80F9-52F83EF709EF}.Debug|x86.Build.0 = Debug|Any CPU
 		{E987B56C-18EB-4B52-80F9-52F83EF709EF}.Release|x86.ActiveCfg = Release|x86
 		{E987B56C-18EB-4B52-80F9-52F83EF709EF}.Release|x86.Build.0 = Release|x86
-		{58E7254F-957C-42E1-BEAB-4622E0E112F6}.Debug|x86.ActiveCfg = Debug|x86
-		{58E7254F-957C-42E1-BEAB-4622E0E112F6}.Debug|x86.Build.0 = Debug|x86
+		{58E7254F-957C-42E1-BEAB-4622E0E112F6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{58E7254F-957C-42E1-BEAB-4622E0E112F6}.Debug|x86.Build.0 = Debug|Any CPU
 		{58E7254F-957C-42E1-BEAB-4622E0E112F6}.Release|x86.ActiveCfg = Release|x86
 		{58E7254F-957C-42E1-BEAB-4622E0E112F6}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD7ECAA5-4DF7-45B0-811E-0B72D1502AED}
 	EndGlobalSection
 EndGlobal
